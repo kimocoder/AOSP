@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- Remotes -->
+    <remote name="github" fetch="https://github.com/" />
+    <remote name="gitlab" fetch="https://gitlab.com/" />
+    <remote name="aosp" fetch="https://android.googlesource.com/" />
+    <remote name="lineage" fetch="https://github.com/LineageOS/" review="https://review.lineageos.org/" />
+
+    <default revision="lineage-22.2" remote="lineage" sync-j="8" />
+
+    <!-- Build system -->
+    <project path="build/make" name="LineageOS/android_build" />
+    <project path="build/soong" name="LineageOS/android_build_soong" />
+    <project path="build/kati" name="LineageOS/android_build_kati" />
+    <project path="build/blueprint" name="LineageOS/android_build_blueprint" />
+    <project path="prebuilts/sdk" name="LineageOS/android_prebuilts_sdk" />
+    <project path="prebuilts/build-tools/common" name="LineageOS/android_prebuilts_build_tools_common" />
+    <project path="prebuilts/build-tools/sdk" name="LineageOS/android_prebuilts_build_tools_sdk" />
+    <project path="prebuilts/clang/host/linux-x86" name="LineageOS/android_prebuilts_clang_host_linux-x86" />
+    <project path="tools/extract-utils" name="LineageOS/android_tools_extract_utils" />
+
+    <!-- Core system -->
+    <project path="system/core" name="LineageOS/android_system_core" />
+    <project path="system/bt" name="LineageOS/android_system_bt" />
+    <project path="system/sepolicy" name="LineageOS/android_system_sepolicy" />
+    <project path="system/netd" name="LineageOS/android_system_netd" />
+    <project path="system/vold" name="LineageOS/android_system_vold" />
+    <project path="system/extras" name="LineageOS/android_system_extras" />
+
+    <!-- Frameworks -->
+    <project path="frameworks/base" name="LineageOS/android_frameworks_base" />
+    <project path="frameworks/native" name="LineageOS/android_frameworks_native" />
+    <project path="frameworks/av" name="LineageOS/android_frameworks_av" />
+    <project path="frameworks/opt/net/wifi" name="LineageOS/android_frameworks_opt_net_wifi" />
+    <project path="frameworks/opt/telephony" name="LineageOS/android_frameworks_opt_telephony" />
+    <project path="frameworks/opt/net/wifi" name="LineageOS/android_frameworks_opt_net_wifi" />
+
+    <!-- Hardware -->
+    <project path="hardware/libhardware" name="LineageOS/android_hardware_libhardware" />
+    <project path="hardware/interfaces" name="LineageOS/android_hardware_interfaces" />
+    <project path="hardware/qcom-caf/sm6250/audio" name="LineageOS/android_hardware_qcom_audio" />
+    <project path="hardware/qcom-caf/sm6250/display" name="LineageOS/android_hardware_qcom_display" />
+    <project path="hardware/qcom-caf/sm6250/media" name="LineageOS/android_hardware_qcom_media" />
+
+    <!-- Vendor -->
+    <project path="vendor/lineage" name="LineageOS/android_vendor_lineage" />
+    <project path="vendor/oneplus/avicii" name="TheMuppets/proprietary_vendor_oneplus_avicii" remote="github" revision="lineage-22.2" />
+
+    <!-- Packages -->
+    <project path="packages/apps/Settings" name="LineageOS/android_packages_apps_Settings" />
+    <project path="packages/apps/Updater" name="LineageOS/android_packages_apps_Updater" />
+    <project path="packages/apps/Contacts" name="LineageOS/android_packages_apps_Contacts" />
+    <project path="packages/apps/Dialer" name="LineageOS/android_packages_apps_Dialer" />
+    <project path="packages/providers/ContactsProvider" name="LineageOS/android_packages_providers_ContactsProvider" />
+    <project path="packages/providers/DownloadProvider" name="LineageOS/android_packages_providers_DownloadProvider" />
+    <project path="packages/apps/Telecomm" name="LineageOS/android_packages_apps_Telecomm" />
+    <project path="packages/apps/PhoneCommon" name="LineageOS/android_packages_apps_PhoneCommon" />
+
+    <!-- External -->
+    <project path="external/sqlite" name="LineageOS/android_external_sqlite" />
+    <project path="external/libxml2" name="LineageOS/android_external_libxml2" />
+    <project path="external/libjpeg-turbo" name="LineageOS/android_external_libjpeg-turbo" />
+    <project path="external/selinux" name="LineageOS/android_external_selinux" />
+    <project path="external/sonivox" name="LineageOS/android_external_sonivox" />
+    <project path="external/bluez" name="LineageOS/android_external_bluez" />
+    <project path="external/libdrm" name="LineageOS/android_external_libdrm" />
+    <project path="external/libavc" name="LineageOS/android_external_libavc" />
+
+    <!-- Kernel -->
+    <project path="kernel/oneplus/avicii" name="kimocoder/kernel_oneplus_avicii" remote="github" revision="nethunter-22.2" />
+
+    <!-- Device -->
+    <project path="device/oneplus/avicii" name="LineageOS/android_device_oneplus_avicii" remote="lineage" revision="lineage-22.2" />
+
+</manifest>
