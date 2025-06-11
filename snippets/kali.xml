@@ -10,7 +10,7 @@
     <project path="hardware/qcom-caf/sm6250/media" name="LineageOS/android_hardware_qcom_media" /> -->
 
     <!-- Vendor -->
-    <project path="vendor/lineage" name="LineageOS/android_vendor_lineage" />
+    <!--<project path="vendor/lineage" name="LineageOS/android_vendor_lineage" /> -->
     <project path="vendor/oneplus/avicii" name="TheMuppets/proprietary_vendor_oneplus_avicii" remote="github" revision="lineage-22.2" />
 
     <!-- External -->
