@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- Hardware -->
+    <project path="hardware/libhardware" name="LineageOS/android_hardware_libhardware" />
+    <project path="hardware/interfaces" name="LineageOS/android_hardware_interfaces" />
+    <project path="hardware/qcom-caf/sm6250/audio" name="LineageOS/android_hardware_qcom_audio" />
+    <project path="hardware/qcom-caf/sm6250/display" name="LineageOS/android_hardware_qcom_display" />
+    <project path="hardware/qcom-caf/sm6250/media" name="LineageOS/android_hardware_qcom_media" />
+
+    <!-- Vendor -->
+    <project path="vendor/lineage" name="LineageOS/android_vendor_lineage" />
+    <project path="vendor/oneplus/avicii" name="TheMuppets/proprietary_vendor_oneplus_avicii" remote="github" revision="lineage-22.2" />
+
+    <!-- External -->
+    <project path="external/sqlite" name="LineageOS/android_external_sqlite" />
+    <project path="external/libxml2" name="LineageOS/android_external_libxml2" />
+    <project path="external/libjpeg-turbo" name="LineageOS/android_external_libjpeg-turbo" />
+    <project path="external/selinux" name="LineageOS/android_external_selinux" />
+    <project path="external/sonivox" name="LineageOS/android_external_sonivox" />
+    <project path="external/bluez" name="LineageOS/android_external_bluez" />
+    <project path="external/libdrm" name="LineageOS/android_external_libdrm" />
+    <project path="external/libavc" name="LineageOS/android_external_libavc" />
+
+    <!-- Kernel -->
+    <project path="kernel/oneplus/avicii" name="kimocoder/kernel_oneplus_avicii" remote="github" revision="nethunter-22.2" />
+
+    <!-- Device -->
+    <project path="device/oneplus/avicii" name="LineageOS/android_device_oneplus_avicii" remote="lineage" revision="lineage-22.2" />
+
+</manifest>
